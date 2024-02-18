@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Late Valentine's Day, Naila</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fceff5;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #d44b5a;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .heart {
+            color: #d44b5a;
+            font-size: 36px;
+            animation: heartbeat 1s infinite alternate;
+        }
+
+        @keyframes heartbeat {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+
+        .pink-bold {
+            color: #d44b5a;
+            font-weight: bold;
+        }
+
+        .black-bold {
+            color: black;
+            font-weight: bold;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .option-btn {
+            background-color: #d44b5a;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .option-btn:hover {
+            background-color: #b82c3a;
+        }
+    </style>
+</head>
+<body>
+    <div id="openingContent" class="container">
+        <h1><span class="black-bold">Are you </span><span class="pink-bold">love</span><span class="black-bold"> me?</span></h1>
+        <div>
+            <button class="option-btn" onclick="openLove()">Yes</button>
+            <button class="option-btn" onclick="removeOpening()">No</button>
+        </div>
+    </div>
+
+    <div id="loveContent" style="display: none;">
+        <div class="container">
+            <h1>Happy Valentine's Day!</h1>
+            <p>
+                My dearest love,<span class="pink-bold"> Naila</span><br>
+                On this day of love, I want to express the depths of my affection for you. You are the melody that dances through my heart, the warmth that envelops my soul, and the light that guides me through every moment. With each beat of my heart, I am reminded of the incredible blessing you are in my life. Your presence fills every corner of my world with joy, laughter, and boundless happiness. In your eyes, I find a reflection of my deepest desires and aspirations, and in your embrace, I discover the purest form of serenity. Today, as we celebrate the beauty of our love, I am endlessly grateful for the gift of your presence in my life. Happy Valentine's Day, my love. May our love continue to blossom and flourish with each passing day.<br>
+                Forever yours,<br>
+                <span class="bold">[Luthfi]</span>
+            </p>
+            <div class="heart">&hearts;</div>
+        </div>
+    </div>
+
+    <script>
+        function openLove() {
+            document.getElementById("openingContent").style.display = "none";
+            document.getElementById("loveContent").style.display = "block";
+        }
+
+        function removeOpening() {
+            // Do nothing
+        }
+    </script>
+</body>
+</html>
